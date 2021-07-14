@@ -5,8 +5,7 @@ require_once VIEWS . "head/head.php";
 
 <body>
     <h1 class='main-title'><?= $departmentData["dept_name"] ?> department</h1>
-
-    <form class="w-50">
+    <form class="w-50" method="POST" action="./index.php?controller=departments&action=updateDepartment">
         <div class="form-group mb-3 p-0">
             <label for="inputEmail4">Department's id</label>
             <input type="text" class="form-control" id="inputName" value="<?= $departmentData["dept_no"] ?>" placeholder="Id" maxlength="4">
